@@ -1,0 +1,16 @@
+{
+  "name": "pages",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "browser-sync start --server ./public/ --files ./public/ --startPath /",
+    "deploy": "./commands/deploy.sh",
+    "lint": "markuplint --no-allow-warnings \"public/**/*.html\"",
+    "test": "bun test",
+    "test:update": "UPDATE_SNAPSHOTS=1 bun test"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

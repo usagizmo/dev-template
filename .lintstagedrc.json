@@ -1,0 +1,5 @@
+{
+  "*": "oxfmt --no-error-on-unmatched-pattern",
+  "*.{js,ts}": "oxlint --fix",
+  "apps/pages/**/*.html": "markuplint --no-allow-warnings"
+}
