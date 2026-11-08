@@ -34,6 +34,7 @@ bun run format       # oxfmt
 bun run check        # tsc
 bun run test         # See Tests
 bun run test:update  # Refresh apps/pages/tests/external-links.txt
+bun audit            # Known vulnerabilities in installed packages
 bun run deploy       # rsync apps/pages/public/ to the server
 ```
 

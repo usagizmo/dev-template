@@ -1,0 +1,7 @@
+[install]
+# Skip versions published less than 1 day ago (seconds), to sidestep freshly hijacked releases.
+minimumReleaseAge = 86400
+
+[run]
+# Run package bins with a `#!/usr/bin/env node` shebang on Bun, so Node.js is never required.
+bun = true
