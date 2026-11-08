@@ -8,7 +8,7 @@ Demo: https://dev-template.usagizmo.com/
 - Lint / format: [oxlint](https://oxc.rs/docs/guide/usage/linter) / [oxfmt](https://oxc.rs/docs/guide/usage/formatter) / [markuplint](https://markuplint.dev/)
 - Type check: [TypeScript](https://www.typescriptlang.org/) (`tests/*.ts` and `public/**/*.js` via `checkJs`)
 - Git hooks: [husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/lint-staged/lint-staged) (`.husky/pre-commit`, `.lintstagedrc.json`)
-- CI: GitHub Actions (`.github/workflows/main.yml`)
+- CI: GitHub Actions (`.github/workflows/main.yml`: audit, lint, check, test)
 
 ## New project checklist
 
@@ -34,6 +34,7 @@ bun run format       # oxfmt
 bun run check        # tsc
 bun run test         # See Tests
 bun run test:update  # Refresh apps/pages/tests/external-links.txt
+bun audit            # Known vulnerabilities in installed packages
 bun run deploy       # rsync apps/pages/public/ to the server
 ```
 

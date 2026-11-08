@@ -17,16 +17,23 @@
     "test:update": "bun --filter '*' test:update"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
+    "@types/bun": "^1.4.4",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
-    "markuplint": "^5.0.1",
-    "oxfmt": "^0.71.0",
-    "oxlint": "^1.86.0",
+    "markuplint": "^5.4.0",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
     "typescript": "^7.0.2"
   },
-  "engines": {
-    "bun": "^1.4.2"
+  "overrides": {
+    "glob": "^14.0.4",
+    "minimatch": "^11.0.5",
+    "resp-modifier": {
+      "minimatch": "^3.1.5"
+    }
   },
-  "packageManager": "bun@1.4.2"
+  "engines": {
+    "bun": "^1.4.4"
+  },
+  "packageManager": "bun@1.4.4"
 }
